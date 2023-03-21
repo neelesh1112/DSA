@@ -7,9 +7,6 @@ int main(){
     int end = size-1;
     while(start <= end)
     {
-        if(start>end)
-            break;
-
         if(start == end)
             cout<<arr[start];
 
