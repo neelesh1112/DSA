@@ -36,3 +36,97 @@ Check vector is empty or not:
 
 
 */
+
+
+#include<iostream>
+#include<vector>
+using namespace std;
+int main()
+{
+        vector<int> arr;
+
+        cout<<arr.size()<<endl;  // Returns the number of elements in the vector. 
+        cout<<arr.capacity()<<endl; // Returns the size of the storage space currently allocated for the vector. This capacity is not necessarily equal to the vector size. It can be equal or greater.
+
+        // Insert
+        arr.push_back(5);
+        arr.push_back(6);
+        cout<<arr.size()<<endl;
+
+        //Print
+        for(int i=0; i<arr.size(); i++)
+        {
+                cout<<arr[i]<<" ";
+        }
+        cout<<endl;
+
+
+        //Remove or Delete
+        arr.pop_back();
+        for(int i=0; i<arr.size(); i++)
+        {
+                cout<<arr[i]<<" ";
+        }
+        cout<<endl;
+
+
+
+
+
+
+
+
+        vector<int> brr(10);
+        cout<< brr.size()<<endl;
+        cout<<brr.capacity()<<endl;
+        for(int i=0; i<brr.size(); i++)
+        {
+                cout<<brr[i]<<" ";
+        }
+        cout<<endl;
+
+
+
+
+
+
+
+
+        vector<int> crr(10, 1);
+        cout<< crr.size()<<endl;
+        cout<<crr.capacity()<<endl;
+        for(int i=0; i<crr.size(); i++)
+        {
+                cout<<crr[i]<<" ";
+        }
+        cout<<endl;
+
+
+
+
+
+
+        int n;
+        cin>>n;
+        vector<int> drr(n, 1);
+        cout<< drr.size()<<endl;
+        cout<<drr.capacity()<<endl;
+        for(int i=0; i<drr.size(); i++)
+        {
+                cout<<drr[i]<<" ";
+        }
+        cout<<endl;
+
+
+
+
+        vector<int> err{10,20,30,40,50};
+        cout<< err.size()<<endl;
+        cout<<err.capacity()<<endl;
+        for(int i=0; i<err.size(); i++)
+        {
+                cout<<err[i]<<" ";
+        }
+        cout<<endl;
+
+}
