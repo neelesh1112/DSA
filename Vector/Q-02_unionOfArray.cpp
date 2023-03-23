@@ -40,16 +40,6 @@ int main(){
         ans.push_back(arr2[i]); 
     }
 
- 
-    // for(int i=0; i<arr2.size(); i++){
-    //     for(int j=0; i<ans.size(); j++){
-    //         if(arr2[i] != ans[j]){
-    //             arr2[i] = -1;
-    //             ans.push_back(arr2[i]);
-    //         }
-    //     }
-    //     break;
-    // }
 
     cout<<"union of both of array: ";
     for(int i=0; i<ans.size(); i++){
